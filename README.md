@@ -21,5 +21,5 @@
 ### Vim
 - [ ] git integration
 ### nixOS
-### Hyprmald
+### Hyprland
 ### Wallpapers
