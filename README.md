@@ -1,11 +1,25 @@
 # dotfiles
 ## features
 ### Vim
-- [x] code completion
+- code completion
+- statusline
+- file browsing
+- homepage (needs customisation)
+- auto pairs
+- indent lines
+- devicons + emoji
+### Kitty
+- set font
+- set colors
+- no confirmation for closing
+- set vim as editor
+### ZSH
+- framework: zim
+- theme: minimal
+
+## to do:
+### Vim
 - [ ] git integration
-- [x] statusline
-- [x] file browsing
-- [ ] homepage (needs customisation)
-- [x] auto pairs
-- [x] indent lines
-- [x] devicons + emoji
+### nixOS
+### Hyprmald
+### Wallpapers
