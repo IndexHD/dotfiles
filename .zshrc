@@ -6,7 +6,7 @@ HISTSIZE=5000
 SAVEHIST=10000
 bindkey -v
 
-zstyle :compinstall filename '/home/ludwig/.zshrc'
+zstyle :compinstall filename '$HOME/.zshrc'
 autoload -Uz 
 
 WORDCHARS=${WORDCHARS//[\/]}
@@ -65,3 +65,4 @@ alias la="ls -a"
 alias fetch="fastfetch"
 alias v="vim"
 alias byebye="poweroff"
+alias stime="tty-clock -src"
