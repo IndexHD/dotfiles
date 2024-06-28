@@ -1,0 +1,27 @@
+[general]
+
+mode = normal
+
+framerate = 165
+
+autosense = 1
+;overshoot = 0 # only nedet if autosense is activated
+
+; sensetivity = 150
+
+[output]
+method = ncurses
+
+[color]
+gradient = 1
+gradient_count = 3
+gradient_color_1='#3a3c65'
+gradient_color_2='#41517f'
+gradient_color_3='#8981a6'
+gradient_color_4='#a390a3'
+
+
+
+
+
+
