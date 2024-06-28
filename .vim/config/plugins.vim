@@ -1,43 +1,47 @@
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  autocmd VimEnter * PlugInstall --sync |source $MYVIMRC
 endif
 
 call plug#begin()
-" Autocompletion
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Colorscheme
+Plug 'ghifarit53/tokyonight-vim'
 
-" Autopairs 
-Plug 'jiangmiao/auto-pairs'
-
-" Shows indentation
-Plug 'Yggdroot/indentLine'
-
-" Custom startpage
-Plug 'mhinz/vim-startify'
-
-" Syntax highlighting for a lot of languges = kitty.conf
-let g:polyglot_disabled = ['latex']
-Plug 'sheerun/vim-polyglot'
-Plug 'fladson/vim-kitty'
-
-" Status bar + themes
+" Status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" Nerd Tree File manager
-Plug 'scrooloose/nerdtree', {'on': ['NERDTreeToggle', 'NERDTreeFind' ]}
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-
-" Devicons and emojis
+" Devicons + emoji
 Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/vim-emoji'
 
-" Translator
-Plug 'voldikss/vim-translator'
+" Show indentations
+Plug 'Yggdroot/indentLine'
 
-" Color to Color
+" Auto pair
+Plug 'jiangmiao/auto-pairs'
+
+" Syntax highlighting
+Plug 'sheerun/vim-polyglot'
+Plug 'fladson/vim-kitty'
+
+" Git integration
+Plug 'tpope/vim-fugitive'
+
+" Code completion and more
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" File manager
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+" Custon home page
+Plug 'mhinz/vim-startify'
+
+" Color to hex
 Plug 'etdev/vim-hexcolor'
+
 call plug#end()
+colorscheme tokyonight

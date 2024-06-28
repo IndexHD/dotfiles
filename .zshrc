@@ -64,3 +64,4 @@ unset key
 alias la="ls -a"
 alias fetch="fastfetch"
 alias v="vim"
+alias byebye="poweroff"
